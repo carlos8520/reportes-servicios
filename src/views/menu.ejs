@@ -1,0 +1,345 @@
+<%- include ('partials/_header') %>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col">
+      <h1 class="display-4">Menú de formularios de reporte de servicios</h1>
+    </div>
+  </div>
+  <div class="row mt-4">
+    <div class="col">
+      <div id="accordion">
+        <!-- AIRES ACONDICIONADOS FORM -->
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button
+                class="btn btn-link"
+                data-toggle="collapse"
+                data-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Instalación / Mantenimiento de aire acondicionado
+              </button>
+            </h5>
+          </div>
+
+          <div
+            id="collapseOne"
+            class="collapse show"
+            aria-labelledby="headingOne"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              <form action="/add" method="post">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name="tipo_servicio"
+                    placeholder="Tipo de servicio"
+                    class="form-control"
+                  />
+                  <input
+                    type="text"
+                    name="id_client"
+                    placeholder="Cliente"
+                    class="form-control my-3"
+                  />
+                  <input
+                    type="text"
+                    name="descripcion"
+                    placeholder="Descripción del servicio"
+                    class="form-control"
+                  />
+                  <input
+                    type="text"
+                    name="ing_responsable"
+                    placeholder="Ingeniero responsable del servicio"
+                    class="form-control my-3"
+                  />
+                  <input
+                    type="text"
+                    name="marca"
+                    placeholder="Marca del producto"
+                    class="form-control"
+                  />
+                  <input
+                    type="text"
+                    name="modelo"
+                    placeholder="Modelo del producto"
+                    class="form-control mt-3"
+                  />
+                  <button type="submit" class="btn btn-primary my-3">
+                    Guardar entrada
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- ALBERCAS FORM -->
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button
+                class="btn btn-link collapsed"
+                data-toggle="collapse"
+                data-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Mantenimiento de albercas
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapseTwo"
+            class="collapse"
+            aria-labelledby="headingTwo"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              <form action="/add" method="post">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name="tipo_servicio"
+                    placeholder="Tipo de servicio"
+                    class="form-control"
+                  />
+                  <input
+                    type="text"
+                    name="id_client"
+                    placeholder="Cliente"
+                    class="form-control my-3"
+                  />
+                  <input
+                    type="text"
+                    name="descripcion"
+                    placeholder="Descripción del servicio"
+                    class="form-control"
+                  />
+                  <input
+                    type="text"
+                    name="ing_responsable"
+                    placeholder="Ingeniero responsable del servicio"
+                    class="form-control my-3"
+                  />
+                  <input
+                    type="text"
+                    name="marca"
+                    placeholder="Marca del producto"
+                    class="form-control"
+                  />
+                  <input
+                    type="text"
+                    name="modelo"
+                    placeholder="Modelo del producto"
+                    class="form-control my-3"
+                  />
+                  <input
+                    type="text"
+                    name="nivel_ph"
+                    placeholder="Nivel de pH"
+                    class="form-control"
+                  />
+                  <input
+                    type="text"
+                    name="nivel_cloro"
+                    placeholder="Nivel de cloro"
+                    class="form-control my-3"
+                  />
+                  <input
+                    type="text"
+                    name="quimico_extra"
+                    placeholder="Químico extra"
+                    class="form-control"
+                  />
+                  <button type="submit" class="btn btn-primary my-3">
+                    Guardar entrada
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- PANELES SOLARES FORM -->
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button
+                class="btn btn-link collapsed"
+                data-toggle="collapse"
+                data-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Instalación / Mantenimiento de páneles solares
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapseThree"
+            class="collapse"
+            aria-labelledby="headingThree"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              <form action="/add" method="post">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name="tipo_servicio"
+                    placeholder="Tipo de servicio"
+                    class="form-control"
+                  />
+                  <input
+                    type="text"
+                    name="id_client"
+                    placeholder="Cliente"
+                    class="form-control my-3"
+                  />
+                  <input
+                    type="text"
+                    name="descripcion"
+                    placeholder="Descripción del servicio"
+                    class="form-control"
+                  />
+                  <input
+                    type="text"
+                    name="ing_responsable"
+                    placeholder="Ingeniero responsable del servicio"
+                    class="form-control my-3"
+                  />
+                  <input
+                    type="text"
+                    name="cantidad"
+                    placeholder="Cantidad de páneles"
+                    class="form-control"
+                  />
+                  <button type="submit" class="btn btn-primary my-3">
+                    Guardar entrada
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- SERVICIOS VARIOS FORM -->
+        <div class="card">
+          <div class="card-header" id="headingFour">
+            <h5 class="mb-0">
+              <button
+                class="btn btn-link collapsed"
+                data-toggle="collapse"
+                data-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                Servicios varios
+              </button>
+            </h5>
+          </div>
+
+          <div
+            id="collapseFour"
+            class="collapse"
+            aria-labelledby="headingFour"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              <form action="/add" method="post">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name="tipo_servicio"
+                    placeholder="Tipo de servicio"
+                    class="form-control"
+                  />
+                  <input
+                    type="text"
+                    name="id_client"
+                    placeholder="Cliente"
+                    class="form-control my-3"
+                  />
+                  <input
+                    type="text"
+                    name="descripcion"
+                    placeholder="Descripción del servicio"
+                    class="form-control"
+                  />
+                  <input
+                    type="text"
+                    name="ing_responsable"
+                    placeholder="Ingeniero responsable del servicio"
+                    class="form-control mt-3"
+                  />
+                  <button type="submit" class="btn btn-primary my-3">
+                    Guardar entrada
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col">
+      <div class="table-responsive">
+        <table class="table table-body table-bordered table-hover">
+          <thead>
+            <tr>
+              <th>No. de orden</th>
+              <th>Cliente</th>
+              <th>Tipo de servicio</th>
+              <th>Fecha</th>
+              <th>Descripción</th>
+              <th>Ingeniero responsable</th>
+              <th>Marca</th>
+              <th>Modelo</th>
+              <th>Nivel pH</th>
+              <th>Nivel cloro</th>
+              <th>Químico extra</th>
+              <th>Cantidad de páneles solares</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% if (data) { %> <% for (let i = 0; i < data.length; i++) { %>
+            <tr>
+              <td><%= (i + 1) %></td>
+              <td><%= data[i].id_client %></td>
+              <td><%= data[i].tipo_servicio %></td>
+              <td><%= data[i].fecha %></td>
+              <td><%= data[i].descripcion %></td>
+              <td><%= data[i].ing_responsable %></td>
+              <td><%= data[i].marca %></td>
+              <td><%= data[i].modelo %></td>
+              <td><%= data[i].nivel_ph %></td>
+              <td><%= data[i].nivel_cloro %></td>
+              <td><%= data[i].quimico_extra %></td>
+              <td><%= data[i].cantidad %></td>
+              <td>
+                <a href="/delete/<%= data[i].id %>" class="btn btn-danger mb-2"
+                  >Borrar</a
+                >
+                <a href="/update/<%= data[i].id %>" class="btn btn-info"
+                  >Editar</a
+                >
+              </td>
+            </tr>
+            <% } %> <% } %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include ('partials/_footer') %>
